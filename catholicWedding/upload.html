@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Record</title>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <style>
+         @font-face {
+          font-family: 'NeuePlak';
+          src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
+          /* You can add additional font variations (bold, italic, etc.) here if you have them */
+      }
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'NeuePlak', sans-serif;
+      }
+        #form-container{
+            justify-content: center;
+        }
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #ccc;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .login-btn {
+            background-color: #5F7ADB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px; /* Adjust the space between the buttons here */
+            float: left;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #5F7ADB;
+            color: white;
+            cursor: pointer;
+            border-radius: 5%;
+        }
+        .custom-button{
+            width: 120px;
+            font-size: 10px;
+            border: 1px solid;
+            border-color: #5F7ADB;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2" id="bkg">
+                <!--<img src="images/upload record.png" alt="" width="300px" style="float: left;" height="780px">-->
+            </div>
+            <div class="col-md-8" id="form-container">
+                <br><br>
+                <h3 style="text-align: center;">Upload Record</h3>
+                <!--Form start-->
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="username">Groom</label>
+                        <input type="text" id="username" name="username" placeholder="Enter groom name">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Bride</label>
+                        <input type="password" id="password" name="password" placeholder="Enter bride name">
+                    </div>
+                    <!--date starts-->
+                 <div class="form-group">
+                    <label for="">Date</label>
+                    <select name="day" id="day">
+                        <option value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <select name="month" id="month">
+                        <option value="">Month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option value="">Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                 </div>
+                    <!--date stops-->
+                    <div class="form-group">
+                        <label for="password">Before Reverend Father</label>
+                        <input id="password" name="password" placeholder="Name of Reverend Father">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">First witness</label>
+                        <input id="password" name="password" placeholder="Name of first witness">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Second witness</label>
+                        <input id="password" name="password" placeholder="Name of second witness">
+                    </div>
+                    <label for="image" style="float: left; text-align: left;">Image of Certificate</label><br>
+                            <!--upload buttons start-->
+                            <div class="button-container">
+                                <button type="upload" class="custom-button">Upload <i class="fas fa-upload"></i></button>
+                                <button type="take" class="custom-button" style="background-color: white; color: #5F7ADB;">Take Photo <i class="fas fa-camera"></i></button>
+                            </div>
+                            <!--upload buttons stops-->
+                    <a href="search1.html"><button type="submit" class="login-btn" style="margin-top: 30px;">Upload <i class="fas fa-upload"></i></button></a>
+                </div>
+                <!--Form stops-->
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+<!--footer starts-->
+<section id="footer">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                </div>
+                <section class="footer-body" style="text-align: center;">
+                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <!--links start-->
+                    <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
+                        <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>
+                        <div class="col-sm-3"><a href="contact.html" style="color: white;">Contact Us</a></div>
+                        <div class="col-sm-3"><a href="terms.html" style="color: white;">Terms of Use</a></div>
+                        <div class="col-sm-3"><a href="privacy.html" style="color: white;">Privacy Policy</a></div>
+                    </div><br>
+                    <!--links stop-->
+                    <!--socials start-->
+                    <div class="container-fluid" style="margin-bottom: 50px;">
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-instagram" style="padding-right: 10px;"></i>Instagram</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-twitter" style="padding-right: 10px;"></i>Twitter</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-facebook" style="padding-right: 10px;"></i>Facebook</a></div>
+                    </div>
+                    <!--socials stop-->
+                </section>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!--footer stops-->
+</body>
+</html>

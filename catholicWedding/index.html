@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatholicWeddingArchive</title>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <style>
+          @font-face {
+            font-family: 'NeuePlak';
+            src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
+            /* You can add additional font variations (bold, italic, etc.) here if you have them */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'NeuePlak', sans-serif;
+        }
+        .navbar {
+            /*position: fixed;*/
+            top: 0;
+            width: 100%;
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Align content to the center horizontally */
+            align-items: center; /* Align content to the center vertically */
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-left: 20px;
+        }
+        .content {
+            padding-top: 70px;
+            /* Your content styling here */
+        }
+        #search{
+            background-image: url(images/bible\ on\ stand.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'NeuePlak', sans-serif;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-input {
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 350px;
+            color: black;
+        }
+        .search-button {
+            padding: 8px 10px;
+            background-color: #5F7ADB;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        #frme{
+            justify-content: center;
+        }
+        #images{
+            width: 500px;
+            height: 300px;
+        }
+        #words{
+            text-align: right; padding-top: 60px;
+        }
+        .box {
+            width: 30%;
+            height: 100px;
+            background-color: #5F7ADB;
+            margin: 10px;
+            height: 130px;
+            color: white;
+            border-radius: 1px;
+        }
+        #ft{
+            background-image: url(images/footer\ img.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<!--navbar starts-->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html">CatholicWeddingArchive</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#works">How it works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="admin.html"><button class="btn btn-primary navbar-btn" style="background-color: #5F7ADB;">Admin Login</button></a>
+        <a href="register.html"><button class="btn navbar-btn"><span style="color: #5F7ADB;">Register Church</span></button></a>
+    </div>
+</nav>
+<!--navber starts-->
+<!--search section starts-->
+<section id="search">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="justify-content: center; text-align: center;">
+                <br><br><br><br><br><br><br>
+                <h2>Thousands of records at your fingertips</h2>
+                <span>Search our comprehensive website for accurate Catholic wedding records, and get results in seconds</span><br><br><br>
+                <div class="search-container">
+                    <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>Search</span></button></a>
+                    <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
+                </div>
+                <br><br><br><br><br><br><br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section><br>
+<!--search section stops-->
+<!--Finding Records Made easier starts-->
+<div class="container">
+    <div class="container-fluid" id="frme">
+        <div class="col-md-6">
+            <img src="images/stacks1.png" alt="" id="images" style="float: left;">
+        </div>
+        <div class="col-md-6" id="words">
+            <h3 style="font-weight: bolder; color: #5F7ADB; float: right;">Finding records made easier</h3>
+            <span style="font-size: 15px; float: right;">Our website makes the finding of
+                Catholic wedding records a seamless process,
+                with accurate & comprehensive results</span>
+                <a href="allRecords.html"><button class="btn navbar-btn" style="background-color: #5F7ADB; float: right;"><span style="color: white; float: right;">View All Records <i class="fas fa-arrow-right"></i></span></button></a>
+        </div>
+    </div>
+</div><br>
+<!--Finding Records Made easier stops-->
+
+<!--Non profit starts-->
+<div class="container">
+    <div class="container-fluid" id="frme">        
+        <div class="col-md-6" style="padding-top: 70px;">
+            <h3 style="font-weight: bolder; color: #5F7ADB;">Nonprofit and free</h3>
+            <span style="font-size: 16px;">FamilySearch is a nonprofit service, dedicated to helping all 
+                Catholics in Nigeria search for wedding records in the easiest way possible</span>
+        </div>
+        <div class="col-md-6">
+            <img src="images/stacks2.png" alt="" id="images" style="float: right;">
+        </div>
+    </div>
+</div><br><br><br>
+<!--nonprofit stops-->
+<!--how it works starts-->
+<section style="text-align: center;" id="works">
+    <h4 style="font-weight: bolder;">How it works</h4>
+    <span>A brief explanation of howour website works</span>
+    <div class="container">
+        <div class="container-fluid">
+                <br><div class="col-md-4 box">
+                <h3>1</h3>
+                <span>Individuals in charge of wedding records 
+                    (e.g The Catechist) registers their Church</span>
+                </div>
+                <div class="col-md-4 box">
+                    <h3>2</h3>
+                    <span>They go through our
+                        verification process,
+                        so we can ensure the integrity of the uploaded data</span>
+                </div>
+                <div class="col-md-4 box">
+                    <h3>3</h3>
+                    <span>Once verified, they gain
+                        upload access and can
+                        add, delete or edit records pertaining to their church</span>
+                </div>
+        </div>
+    </div>
+</section><br><br><br>
+<!--how it works stops-->
+<!--img bkg starts-->
+<section id="ft">
+<div class="container">
+    <div class="container-fluid">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <br><br><br><br><br><br><br>
+            <h3>Register now, and make your documenting process easier.</h3>
+            <a href="register.html"><button class="btn navbar-btn" style="background-color: #5F7ADB; color: white;">Register</button></a>
+            <p>Or <a href="admin.html"><span style="color: #5F7ADB;">Login</span></a> if you already have an account</p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+</section>
+<!--img bkg stops-->
+<!--footer starts-->
+<section id="footer">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                </div>
+                <section class="footer-body" style="text-align: center;">
+                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <!--links start-->
+                    <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
+                        <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>
+                        <div class="col-sm-3"><a href="contact.html" style="color: white;">Contact Us</a></div>
+                        <div class="col-sm-3"><a href="terms.html" style="color: white;">Terms of Use</a></div>
+                        <div class="col-sm-3"><a href="privacy.html" style="color: white;">Privacy Policy</a></div>
+                    </div><br>
+                    <!--links stop-->
+                    <!--socials start-->
+                    <div class="container-fluid" style="margin-bottom: 50px;">
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-instagram" style="padding-right: 10px;"></i>Instagram</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-twitter" style="padding-right: 10px;"></i>Twitter</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-facebook" style="padding-right: 10px;"></i>Facebook</a></div>
+                    </div>
+                    <!--socials stop-->
+                </section>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!--footer stops-->
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <style>
+        @font-face {
+          font-family: 'NeuePlak';
+          src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
+          /* You can add additional font variations (bold, italic, etc.) here if you have them */
+      }
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'NeuePlak', sans-serif;
+      }
+      .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #ccc;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .login-btn {
+            background-color: #5F7ADB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-6" style="text-align: center; justify-content: center;">
+                <div class="container-fluid">
+                    <div class="col-sm-8">
+                        <img src="images/Group 1.png" alt="" width="40px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html"><span style="color: black;">CatholicWeddingArchive</span></a><br>
+                        <br><br><h2>Admin Login</h2>
+                        <span>Login to your Church account</span><br><br>
+                        <!--form starts-->
+                        <div class="login-form">
+                            <div class="form-group">
+                                <label for="username">Login:</label>
+                                <input type="text" id="username" name="username" placeholder="Email or phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password">
+                            </div>
+                            <a href="#" class="forgot-password">I forgot my password</a><br>
+                            <a href="upload.html"><button type="submit" class="login-btn">Login <i class="fas fa-arrow-right"></i></button></a>
+                            <p style="margin-top: 10px;">Don't have an account?<a href="register.html"><span style="color: #5F7ADB;">Sign up</span></a></p>
+                        </div>
+                        <!--form stops-->
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/admin half.png" alt="" width="710px" height="790px">
+            </div>
+        </div>
+    </div>
+<!--footer starts-->
+<section id="footer">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                </div>
+                <section class="footer-body" style="text-align: center;">
+                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <!--links start-->
+                    <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
+                        <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>
+                        <div class="col-sm-3"><a href="contact.html" style="color: white;">Contact Us</a></div>
+                        <div class="col-sm-3"><a href="terms.html" style="color: white;">Terms of Use</a></div>
+                        <div class="col-sm-3"><a href="privacy.html" style="color: white;">Privacy Policy</a></div>
+                    </div><br>
+                    <!--links stop-->
+                    <!--socials start-->
+                    <div class="container-fluid" style="margin-bottom: 50px;">
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-instagram" style="padding-right: 10px;"></i>Instagram</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-twitter" style="padding-right: 10px;"></i>Twitter</a></div>
+                        <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-facebook" style="padding-right: 10px;"></i>Facebook</a></div>
+                    </div>
+                    <!--socials stop-->
+                </section>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!--footer stops-->
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatholicWeddingArchive</title>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+          @font-face {
+            font-family: 'NeuePlak';
+            src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
+            /* You can add additional font variations (bold, italic, etc.) here if you have them */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'NeuePlak', sans-serif;
+        }
+        .navbar {
+            /*position: fixed;*/
+            top: 0;
+            width: 100%;
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Align content to the center horizontally */
+            align-items: center; /* Align content to the center vertically */
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-left: 20px;
+        }
+        .content {
+            padding-top: 70px;
+            /* Your content styling here */
+        }
+        #search{
+            color: white;
+            font-family: 'NeuePlak', sans-serif;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-input {
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 350px;
+            color: black;
+        }
+        .search-button {
+            padding: 8px 10px;
+            background-color: #5F7ADB;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+        }
+        .work-img{
+            width: 100%;
+            height: 300px;
+        }
+        .w-title{
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 1px;
+        }
+        .active{
+            color: #5F7ADB;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<!--navbar starts-->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left; margin-right: 15px;"><a class="navbar-brand" href="index.html">CatholicWeddingArchive</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#works">How it works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <a href="admin.html"><button class="btn btn-primary navbar-btn" style="background-color: #5F7ADB;">Admin Login</button></a>
+        <a href="register.html"><button class="btn navbar-btn"><span style="color: #5F7ADB;">Register Church</span></button></a>
+        </ul>
+        
+    </div>
+</nav>
+<!--navber starts-->
+<!--search section starts-->
+<section id="search">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="justify-content: center; text-align: center;">
+                <div class="search-container">
+                    <button class="search-button"><i class="fas fa-search"></i><span>  Search</span></button>
+                    <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
+                </div>
+                <br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!--search section stops-->
+
+<!--all records starts-->
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+            <h3 style="float: left;">
+              All Records
+            </h3>
+            <button class="btn" style="background-color: #5F7ADB; color: white; float: right; padding: 10px;">Filter  <i class="fas fa-filter"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="search1.html" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="images/Rectangle 65st particks.png" alt="" class="img-fluid" height="300px">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">St. Patrick’s Parish</h2>
+                  <span><i class="fa fa-map-marker" style="color: red;"></i> Apata, Jos, Plateau State</span>
+                  <div class="w-more">
+                    <span class="w-ctegory">470 wedding records</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-box">
+              <a href="images/Rectangle 65St. John's Parish.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="images/Rectangle 65St. John's Parish.png" alt="" class="img-fluid" height="300px">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">St. John's Parish</h2>
+                    <span style="font-size: 12px;"><i class="fa fa-map-marker" style="color: red;"></i> Beach Road, Nsukka, Enugu State</span>
+                    <div class="w-more">
+                      <span class="w-ctegory">3,124 wedding records</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-box">
+              <a href="images/Rectangle 65Fatima catholic Church.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="images/Rectangle 65Fatima catholic Church.png" alt="" class="img-fluid" height="300px">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title" style="font-size: 18px;">Fatima catholic Church</h2>
+                    <span><i class="fa fa-map-marker" style="color: red;"></i> Apata, Jos, Plateau State</span>
+                    <div class="w-more">
+                      <span class="w-ctegory">470 wedding records</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+        <!--second line starts-->
+
+          <!--stops-->
+
+      </div>
+      <!--second row starts-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="search1.html" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="images/Rectangle 65st particks.png" alt="" class="img-fluid" height="300px">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">St. Patrick’s Parish</h2>
+                  <span><i class="fa fa-map-marker" style="color: red;"></i> Apata, Jos, Plateau State</span>
+                  <div class="w-more">
+                    <span class="w-ctegory">470 wedding records</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-box">
+              <a href="images/Rectangle 65St. John's Parish.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="images/Rectangle 65St. John's Parish.png" alt="" class="img-fluid" height="300px">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">St. John's Parish</h2>
+                    <span style="font-size: 12px;"><i class="fa fa-map-marker" style="color: red;"></i> Beach Road, Nsukka, Enugu State</span>
+                    <div class="w-more">
+                      <span class="w-ctegory">3,124 wedding records</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-box">
+              <a href="images/Rectangle 65Fatima catholic Church.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="images/Rectangle 65Fatima catholic Church.png" alt="" class="img-fluid" height="300px">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title" style="font-size: 18px;">Fatima catholic Church</h2>
+                    <span><i class="fa fa-map-marker" style="color: red;"></i> Apata, Jos, Plateau State</span>
+                    <div class="w-more">
+                      <span class="w-ctegory">470 wedding records</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+
+      </div><br>
+      <!--second row stops-->
+      <!--pagination starts-->
+<section style="margin-left: 450px;">
+    <ul class="pagination">
+        <li><a href="?page=1"><</a></li>
+        <li class="active"><a href="?page=2">1</a></li>
+        <li><a href="?page=2">2</a></li>
+        <li><a href="?page=2">...</a></li>
+        <li><a href="?page=2">9</a></li>
+        <li><a href="?page=2">10</a></li>
+        <li><a href="?page=2">></a></li>
+        <!-- Add more page links here based on the total number of pages -->
+        <!-- In this example, we'll assume we have 3 pages (page 1, page 2, page 3) -->
+    </ul>
+</section>
+<!--pagination stops-->
+    </div> 
+  </section>
+<!--all records stops-->
+
+<!--footer starts-->
+<section id="footer">
+  <div class="container">
+      <div class="container-fluid">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+              <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
+                  <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+              </div>
+              <section class="footer-body" style="text-align: center;">
+                  <br><br><span>&copy; 2023. All Rights Reserved</span>
+                  <!--links start-->
+                  <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
+                      <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>
+                      <div class="col-sm-3"><a href="contact.html" style="color: white;">Contact Us</a></div>
+                      <div class="col-sm-3"><a href="terms.html" style="color: white;">Terms of Use</a></div>
+                      <div class="col-sm-3"><a href="privacy.html" style="color: white;">Privacy Policy</a></div>
+                  </div><br>
+                  <!--links stop-->
+                  <!--socials start-->
+                  <div class="container-fluid" style="margin-bottom: 50px;">
+                      <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-instagram" style="padding-right: 10px;"></i>Instagram</a></div>
+                      <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-twitter" style="padding-right: 10px;"></i>Twitter</a></div>
+                      <div class="col-sm-4"><a href="" style="color: white;"><i class="fab fa-facebook" style="padding-right: 10px;"></i>Facebook</a></div>
+                  </div>
+                  <!--socials stop-->
+              </section>
+          </div>
+          <div class="col-md-2"></div>
+      </div>
+  </div>
+</section>
+<!--footer stops-->
+</body>
+</html>
