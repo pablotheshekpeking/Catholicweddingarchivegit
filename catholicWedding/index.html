@@ -75,8 +75,8 @@
             justify-content: center;
         }
         #images{
-            width: 500px;
-            height: 300px;
+            max-width: 500px;
+            max-height: 300px;
         }
         #words{
             text-align: right; padding-top: 60px;
@@ -103,6 +103,57 @@
             color: white;
             justify-content: center;
         }
+        .footer-header {
+                padding-left: 180px;
+        }
+
+        /* Adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                margin: 10px;
+            }
+            .navbar .logo {
+                margin-left: 0;
+            }
+            .search-input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .search-container {
+                flex-direction: column;
+            }
+            .search-button {
+                width: 100%;
+            }
+            #images {
+                max-width: 100%;
+            }
+            #words {
+                text-align: center;
+            }
+            .box {
+                width: 100%;
+            }
+            #ft h3 {
+                font-size: 18px;
+            }
+            #ft p {
+                font-size: 14px;
+            }
+            .footer-header {
+                padding-left: 0;
+            }
+            .footer-body {
+                margin-top: 10px;
+            }
+            #cat{
+                padding-left: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,18 +176,16 @@
 <section id="search">
     <div class="container">
         <div class="container-fluid">
-            <div class="col-md-2"></div>
-            <div class="col-md-8" style="justify-content: center; text-align: center;">
+            <div class="col-md-12" style="justify-content: center; text-align: center;">
                 <br><br><br><br><br><br><br>
                 <h2>Thousands of records at your fingertips</h2>
                 <span>Search our comprehensive website for accurate Catholic wedding records, and get results in seconds</span><br><br><br>
                 <div class="search-container">
-                    <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>Search</span></button></a>
                     <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
+                    <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>Search</span></button></a>
                 </div>
                 <br><br><br><br><br><br><br>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
 </section><br>
@@ -175,7 +224,7 @@
 <!--how it works starts-->
 <section style="text-align: center;" id="works">
     <h4 style="font-weight: bolder;">How it works</h4>
-    <span>A brief explanation of howour website works</span>
+    <span>A brief explanation of how our website works</span>
     <div class="container">
         <div class="container-fluid">
                 <br><div class="col-md-4 box">
@@ -216,16 +265,18 @@
 </section>
 <!--img bkg stops-->
 <!--footer starts-->
-<section id="footer">
+<section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
         <div class="container-fluid">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
-                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                <div class="footer-header" style="margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+                    <a class="navbar-brand" href="index.html" style="color: white;" id="cat">CatholicWeddingArchive</a><br>
                 </div>
                 <section class="footer-body" style="text-align: center;">
-                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <br><br>
+                    <span>&copy; 2023. All Rights Reserved</span>
                     <!--links start-->
                     <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
                         <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>

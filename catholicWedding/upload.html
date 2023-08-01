@@ -82,6 +82,57 @@
             color: white;
             justify-content: center;
         }
+        .footer-header {
+                padding-left: 180px;
+        }
+
+        /* Adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                margin: 10px;
+            }
+            .navbar .logo {
+                margin-left: 0;
+            }
+            .search-input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .search-container {
+                flex-direction: column;
+            }
+            .search-button {
+                width: 100%;
+            }
+            #images {
+                max-width: 100%;
+            }
+            #words {
+                text-align: center;
+            }
+            .box {
+                width: 100%;
+            }
+            #ft h3 {
+                font-size: 18px;
+            }
+            #ft p {
+                font-size: 14px;
+            }
+            .footer-header {
+                padding-left: 0;
+            }
+            .footer-body {
+                margin-top: 10px;
+            }
+            #cat{
+                padding-left: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -152,16 +203,18 @@
         </div>
     </div>
 <!--footer starts-->
-<section id="footer">
+<section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
         <div class="container-fluid">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
-                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                <div class="footer-header" style="margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+                    <a class="navbar-brand" href="index.html" style="color: white;" id="cat">CatholicWeddingArchive</a><br>
                 </div>
                 <section class="footer-body" style="text-align: center;">
-                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <br><br>
+                    <span>&copy; 2023. All Rights Reserved</span>
                     <!--links start-->
                     <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
                         <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>

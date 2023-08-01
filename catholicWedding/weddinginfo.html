@@ -9,67 +9,99 @@
     <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
     <style>
-          @font-face {
+        @font-face {
             font-family: 'NeuePlak';
-            src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
+            src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype');
+            /* Replace 'neueplak-regular.ttf' with the correct file path and format */
             /* You can add additional font variations (bold, italic, etc.) here if you have them */
         }
+
         body {
             margin: 0;
             padding: 0;
             font-family: 'NeuePlak', sans-serif;
         }
+
         .navbar {
-            /*position: fixed;*/
             top: 0;
             width: 100%;
-            display: flex; /* Use flexbox */
-            justify-content: center; /* Align content to the center horizontally */
-            align-items: center; /* Align content to the center vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 10px 0;
         }
+
         .navbar a {
             color: black;
             text-decoration: none;
             margin: 0 20px;
         }
+
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
             color: white;
             margin-left: 20px;
-        }       
-        #search{
+        }
+
+        #search {
             color: white;
             font-family: 'NeuePlak', sans-serif;
         }
+
         .image-container {
-      position: relative;
-      display: inline-block;
-    }
+            position: relative;
+            display: inline-block;
+        }
 
-    .image {
-      width: 300px; /* Adjust the image width as needed */
-      height: auto; /* This will maintain the aspect ratio */
-    }
+        .image {
+            width: 100%; /* Adjust the image width as needed */
+            height: auto; /* This will maintain the aspect ratio */
+        }
 
-    .button {
-      position: absolute;
-      bottom: 10px; /* Adjust the bottom value to control the distance from the bottom of the container */
-      left: 50%; /* Center the button horizontally within the container */
-      transform: translateX(-50%); /* Center the button horizontally using a CSS transform */
-      padding: 10px 20px;
-      background-color: #5F7ADB;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }    
-    #footer{
+        .button {
+            position: absolute;
+            bottom: 10px; /* Adjust the bottom value to control the distance from the bottom of the container */
+            left: 50%; /* Center the button horizontally within the container */
+            transform: translateX(-50%); /* Center the button horizontally using a CSS transform */
+            padding: 10px 20px;
+            background-color: #5F7ADB;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #footer {
             background-color: black;
             color: white;
             justify-content: center;
-        }   
+        }
+        .footer-header {
+                padding-left: 180px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .col-md-6,
+            .col-md-8 {
+                width: 100%;
+            }
+            .footer-header {
+                padding-left: 0;
+            }
+            .footer-body {
+                margin-top: 10px;
+            }
+            #cat{
+                padding-left: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -92,7 +124,7 @@
     <div class="container">
         <div class="container-fluid">
             <div class="col-lg-2"></div>
-            <div class="col-lg-8"><br>
+            <div class="col-md-8 col-lg-8"><br>
                 <!--info starts-->
                 <div class="container-fluid">
                     <!--couple info starts-->
@@ -129,7 +161,7 @@
                         <div class="image-container">
                             <img class="image" src="images/certificate.jpeg" alt="">
                             <a href="images/certificate.jpeg"><button class="button">Download</button></a>
-                          </div>
+                        </div>
                     </div>
                     <!--certificate img stops-->
                 </div>
@@ -141,16 +173,18 @@
 </section>
 <!--body stops-->
 <!--footer starts-->
-<section id="footer">
+<section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
         <div class="container-fluid">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
-                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                <div class="footer-header" style="margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+                    <a class="navbar-brand" href="index.html" style="color: white;" id="cat">CatholicWeddingArchive</a><br>
                 </div>
                 <section class="footer-body" style="text-align: center;">
-                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <br><br>
+                    <span>&copy; 2023. All Rights Reserved</span>
                     <!--links start-->
                     <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
                         <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>

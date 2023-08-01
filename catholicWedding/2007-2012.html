@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search 1</title>
+    <title>2007-2012</title>
     <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
     <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
     <style>
-          @font-face {
+        @font-face {
             font-family: 'NeuePlak';
             src: url('style/fonts/neue-plak-cufonfonts/Neue\ Plak\ Regular.ttf') format('truetype'); /* Replace 'neueplak-regular.ttf' with the correct file path and format */
             /* You can add additional font variations (bold, italic, etc.) here if you have them */
         }
+
         body {
             margin: 0;
             padding: 0;
             font-family: 'NeuePlak', sans-serif;
         }
+
         .navbar {
-            /*position: fixed;*/
             top: 0;
             width: 100%;
-            display: flex; /* Use flexbox */
-            justify-content: center; /* Align content to the center horizontally */
-            align-items: center; /* Align content to the center vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 10px 0;
         }
+
         .navbar a {
             color: black;
             text-decoration: none;
             margin: 0 20px;
         }
+
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
             color: white;
             margin-left: 20px;
-        }       
-        #search{
+        }
+
+        #search {
             color: white;
             font-family: 'NeuePlak', sans-serif;
         }
+
         .search-container {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .search-input {
             padding: 8px;
             font-size: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
             color: black;
         }
+
         .search-button {
             padding: 8px 10px;
             background-color: #5F7ADB;
@@ -64,25 +72,79 @@
             color: white;
             cursor: pointer;
             width: 100px;
-        } 
+        }
+
         table {
-      border-collapse: collapse;
-      width: 100%;
-    }
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-    }
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
 
-    tr:nth-child(odd) {
-      background-color: #EDEDED;
-    }
-    #footer{
+        tr:nth-child(odd) {
+            background-color: #EDEDED;
+        }
+
+        #footer {
             background-color: black;
             color: white;
             justify-content: center;
+        }
+        .footer-header {
+                padding-left: 180px;
+        }
+
+        /* Adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                margin: 10px;
+            }
+            .navbar .logo {
+                margin-left: 0;
+            }
+            .search-input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .search-container {
+                flex-direction: column;
+            }
+            .search-button {
+                width: 100%;
+            }
+            #images {
+                max-width: 100%;
+            }
+            #words {
+                text-align: center;
+            }
+            .box {
+                width: 100%;
+            }
+            #ft h3 {
+                font-size: 18px;
+            }
+            #ft p {
+                font-size: 14px;
+            }
+            .footer-header {
+                padding-left: 0;
+            }
+            .footer-body {
+                margin-top: 10px;
+            }
+            #cat{
+                padding-left: 10px;
+            }
         }
     </style>
 </head>
@@ -91,13 +153,16 @@
 <nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
-            <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html">CatholicWeddingArchive</a>
+            <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+            <a class="navbar-brand" href="index.html">CatholicWeddingArchive</a>
         </div>
         <ul class="nav navbar-nav">
             <li><a href="index.html#works">How it works</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a href="admin.html"><button class="btn btn-primary navbar-btn" style="background-color: #5F7ADB;">Upload <i class="fas fa-upload"></i></button></a>
+        <a href="admin.html">
+            <button class="btn btn-primary navbar-btn" style="background-color: #5F7ADB;">Upload <i class="fas fa-upload"></i></button>
+        </a>
     </div>
 </nav>
 <!--navber starts-->
@@ -108,7 +173,12 @@
             <div class="col-md-2"></div>
             <div class="col-md-8" style="justify-content: center; text-align: center;">
                 <div class="search-container">
-                    <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>  Search</span></button></a>
+                    <a href="search3.html">
+                        <button class="search-button">
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </button>
+                    </a>
                     <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
                 </div>
                 <br>
@@ -127,7 +197,8 @@
             <!--header with filter starts-->
             <section class="header" style="float: left;">
                 <h3>St. Patrick’s Parish</h3>
-                <span style="color: #5F7ADB; margin-top: 0px;">2007-2012</span><span style="font-size: 16px; color: #ccc;"> 470 wedding records</span>
+                <span style="color: #5F7ADB; margin-top: 0px;">2007-2012</span>
+                <span style="font-size: 16px; color: #ccc;">470 wedding records</span>
             </section>
             <button class="btn" style="background-color: #5F7ADB; color: white; float: right; padding: 10px;">Filter  <i class="fas fa-filter"></i></button>
             <!--header with filter stops-->
@@ -199,16 +270,18 @@
 </div><br><br>
 <!--results stop-->
 <!--footer starts-->
-<section id="footer">
+<section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
         <div class="container-fluid">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
-                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                <div class="footer-header" style="margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+                    <a class="navbar-brand" href="index.html" style="color: white;" id="cat">CatholicWeddingArchive</a><br>
                 </div>
                 <section class="footer-body" style="text-align: center;">
-                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <br><br>
+                    <span>&copy; 2023. All Rights Reserved</span>
                     <!--links start-->
                     <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
                         <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>

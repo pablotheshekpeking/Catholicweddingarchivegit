@@ -82,16 +82,55 @@
             color: white;
             justify-content: center;
         }
+        .footer-header {
+                padding-left: 180px;
+        }
+
+        /* Adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .col-md-6 {
+                text-align: center;
+            }
+            .col-md-6 img {
+                width: 100%;
+                height: auto;
+            }
+            .container-fluid {
+                flex-wrap: wrap;
+            }
+            .login-form {
+                max-width: 100%;
+            }
+            .form-group input {
+                width: 100%;
+            }
+            .forgot-password {
+                text-align: left;
+            }
+            .login-btn {
+                width: 100%;
+            }
+            .footer-header {
+                padding-left: 0;
+                float: left;
+            }
+            .footer-body {
+                margin-top: 10px;
+            }
+            #cat{
+                padding-left: 0px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="container-fluid">
-            <div class="col-md-6" style="text-align: center; justify-content: center;">
+            <div class="col-md-6">
                 <div class="container-fluid">
                     <div class="col-sm-8">
                         <img src="images/Group 1.png" alt="" width="40px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html"><span style="color: black;">CatholicWeddingArchive</span></a><br>
-                        <br><br><h2>Register Church</h2>
+                        <br><br><h2 style="text-align: center;">Register Church</h2>
                         <span>Register your  Church and request upload access</span><br><br>
                         <!--church detals form starts-->
                         <div class="login-form">
@@ -169,16 +208,18 @@
         </div>
     </div>
 <!--footer starts-->
-<section id="footer">
+<section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
         <div class="container-fluid">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="footer-header" style="padding-left: 180px; margin-top: 20px;">
-                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;"><a class="navbar-brand" href="index.html" style="color: white;">CatholicWeddingArchive</a><br>
+                <div class="footer-header" style="margin-top: 20px;">
+                    <img src="images/Group 1.png" alt="" width="50px" height="100%" style="float: left;">
+                    <a class="navbar-brand" href="index.html" style="color: white;" id="cat">CatholicWeddingArchive</a><br>
                 </div>
                 <section class="footer-body" style="text-align: center;">
-                    <br><br><span>&copy; 2023. All Rights Reserved</span>
+                    <br><br>
+                    <span>&copy; 2023. All Rights Reserved</span>
                     <!--links start-->
                     <div class="container-fluid" style="text-align: center; margin-top: 30px; font-size: 20px;">
                         <div class="col-sm-3"><a href="#works" style="color: white;">How it Works</a></div>
