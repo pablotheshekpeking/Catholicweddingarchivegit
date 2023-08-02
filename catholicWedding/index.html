@@ -90,6 +90,9 @@
             color: white;
             border-radius: 1px;
         }
+        #viewrec{
+            float: right;
+        }
         #ft{
             background-image: url(images/footer\ img.jpeg);
             background-repeat: no-repeat;
@@ -105,6 +108,15 @@
         }
         .footer-header {
                 padding-left: 180px;
+        }
+
+        .dark-overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity here (0.7 means 50% opacity) */
+            pointer-events: none; /* Ensures the overlay doesn't interfere with clicks */
         }
 
         /* Adjustments for mobile devices */
@@ -137,6 +149,8 @@
             }
             .box {
                 width: 100%;
+                text-align: center;
+                padding-top: 10px;
             }
             #ft h3 {
                 font-size: 18px;
@@ -145,13 +159,19 @@
                 font-size: 14px;
             }
             .footer-header {
-                padding-left: 0;
+                padding-left: 20px;
             }
             .footer-body {
                 margin-top: 10px;
             }
             #cat{
                 padding-left: 10px;
+            }
+            #frme{
+                text-align: center;
+            }
+            #viewrec{
+                margin-right: 90px;
             }
         }
     </style>
@@ -197,11 +217,11 @@
             <img src="images/stacks1.png" alt="" id="images" style="float: left;">
         </div>
         <div class="col-md-6" id="words">
-            <h3 style="font-weight: bolder; color: #5F7ADB; float: right;">Finding records made easier</h3>
+            <h3 style="font-weight: bolder; color: #5F7ADB;" id="find">Finding records made easier</h3>
             <span style="font-size: 15px; float: right;">Our website makes the finding of
                 Catholic wedding records a seamless process,
                 with accurate & comprehensive results</span>
-                <a href="allRecords.html"><button class="btn navbar-btn" style="background-color: #5F7ADB; float: right;"><span style="color: white; float: right;">View All Records <i class="fas fa-arrow-right"></i></span></button></a>
+                <a href="allRecords.html"><button class="btn navbar-btn" style="background-color: #5F7ADB;" id="viewrec"><span style="color: white;">View All Records <i class="fas fa-arrow-right"></i></span></button></a>
         </div>
     </div>
 </div><br>
@@ -249,7 +269,7 @@
 </section><br><br><br>
 <!--how it works stops-->
 <!--img bkg starts-->
-<section id="ft">
+<section id="ft" class="dark-overlay">
 <div class="container">
     <div class="container-fluid">
         <div class="col-lg-2"></div>
