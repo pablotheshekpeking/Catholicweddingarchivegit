@@ -51,9 +51,12 @@
             font-family: 'NeuePlak', sans-serif;
         }
         .search-container {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
+        }
+        .search-container.active {
+            display: block;
         }
         .search-input {
             padding: 8px;
@@ -70,6 +73,43 @@
             border-radius: 4px;
             color: white;
             cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            margin-right: -20px; /* Compensate for margin collapsing */
+            justify-content: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px; /* Add margin to create space */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #5F7ADB;
+            border-radius: 4px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
         #frme{
             justify-content: center;
@@ -199,7 +239,26 @@
                 <br><br><br><br><br><br><br>
                 <h2>Thousands of records at your fingertips</h2>
                 <span>Search our comprehensive website for accurate Catholic wedding records, and get results in seconds</span><br><br><br>
-                <div class="search-container">
+                <div class="button-container">
+                    <div class="dropdown">
+                        <button class="button">User</button>
+                        <div class="dropdown-content">
+                          <a href="" class="toggle-search">Search Records</a>
+                          <a href="allRecords.html">View All Records</a>
+                        </div>
+                      </div>
+                      
+                      <div class="dropdown">
+                        <button class="button">Admin</button>
+                        <div class="dropdown-content">
+                          <a href="admin.html">Login</a><br>
+                          <a href="register.html">Register Church</a>
+                          <a href="upload.html">Upload a record</a>
+                          <a href="allRecords.html">View All Records</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="search-container" id="searchBar">
                     <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
                     <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>Search</span></button></a>
                 </div>
@@ -318,5 +377,16 @@
     </div>
 </section>
 <!--footer stops-->
+<!--JS for search bar activation-->
+<script>
+    const searchBar = document.getElementById("searchBar");
+    const toggleSearchLink = document.querySelector(".toggle-search");
+  
+    toggleSearchLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      searchBar.classList.toggle("active");
+    });
+  </script>
+<!--JS for search bar activation-->
 </body>
 </html>
