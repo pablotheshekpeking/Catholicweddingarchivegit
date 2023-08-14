@@ -44,14 +44,10 @@
             /* Your content styling here */
         }
         #search{
-            background-image: url(images/bible\ on\ stand.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
             color: white;
             font-family: 'NeuePlak', sans-serif;
         }
         .search-container {
-            display: none;
             align-items: center;
             justify-content: center;
         }
@@ -73,83 +69,6 @@
             border-radius: 4px;
             color: white;
             cursor: pointer;
-        }
-        .button-container {
-            display: flex;
-            margin-right: -20px; /* Compensate for margin collapsing */
-            justify-content: center;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            margin-right: 20px; /* Add margin to create space */
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            display: block;
-            margin-bottom: 2px; /* Add margin between links */
-            color: black;
-        }
-
-        .dropdown-content a:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .button {
-            width: 100%;
-            padding: 10px 20px;
-            background-color: #5F7ADB;
-            border-radius: 4px;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-        #frme{
-            justify-content: center;
-        }
-        #images{
-            max-width: 500px;
-            max-height: 300px;
-        }
-        #words{
-            text-align: right; padding-top: 60px;
-        }
-        .box {
-            width: 30%;
-            height: 100px;
-            background-color: #5F7ADB;
-            margin: 10px;
-            height: 130px;
-            color: white;
-            border-radius: 1px;
-        }
-        #viewrec{
-            float: right;
-        }
-        #ft{
-            background-image: url(images/footer\ img.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding-bottom: 50px;
         }
         #footer{
             background-color: black;
@@ -247,27 +166,6 @@
         <div class="container-fluid">
             <div class="col-md-12" style="justify-content: center; text-align: center;">
                 <br><br><br><br><br><br><br>
-                <h2>Thousands of records at your fingertips</h2>
-                <span>Search our comprehensive website for accurate Catholic wedding records, and get results in seconds</span><br><br><br>
-                <div class="button-container">
-                    <div class="dropdown">
-                        <button class="button">User</button>
-                        <div class="dropdown-content">
-                          <a href="searchbar.html">Search Records</a>
-                          <a href="allRecords.html">View All Records</a>
-                        </div>
-                      </div>
-                      
-                      <div class="dropdown">
-                        <button class="button">Admin</button>
-                        <div class="dropdown-content">
-                          <a href="admin.html">Login</a>
-                          <a href="register.html">Register Church</a>
-                          <a href="upload.html">Upload a record</a>
-                          <a href="allRecords.html">View All Records</a>
-                        </div>
-                      </div>
-                </div>
                 <div class="search-container" id="searchBar">
                     <input type="text" class="search-input" placeholder="Search for the name of an individual, Church, or Priest...">
                     <a href="search3.html"><button class="search-button"><i class="fas fa-search"></i><span>Search</span></button></a>
@@ -278,80 +176,6 @@
     </div>
 </section><br>
 <!--search section stops-->
-<!--Finding Records Made easier starts-->
-<div class="container">
-    <div class="container-fluid" id="frme">
-        <div class="col-md-6">
-            <img src="images/stacks1.png" alt="" id="images" style="float: left;">
-        </div>
-        <div class="col-md-6" id="words">
-            <h3 style="font-weight: bolder; color: #5F7ADB;" id="find">Finding records made easier</h3>
-            <span style="font-size: 15px; float: right;">Our website makes the finding of
-                Catholic wedding records a seamless process,
-                with accurate & comprehensive results</span>
-                <a href="allRecords.html"><button class="btn navbar-btn" style="background-color: #5F7ADB;" id="viewrec"><span style="color: white;">View All Records <i class="fas fa-arrow-right"></i></span></button></a>
-        </div>
-    </div>
-</div><br>
-<!--Finding Records Made easier stops-->
-
-<!--Non profit starts-->
-<div class="container">
-    <div class="container-fluid" id="frme">        
-        <div class="col-md-6" style="padding-top: 70px;">
-            <h3 style="font-weight: bolder; color: #5F7ADB;">Nonprofit and free</h3>
-            <span style="font-size: 16px;">FamilySearch is a nonprofit service, dedicated to helping all 
-                Catholics in Nigeria search for wedding records in the easiest way possible</span>
-        </div>
-        <div class="col-md-6">
-            <img src="images/stacks2.png" alt="" id="images" style="float: right;">
-        </div>
-    </div>
-</div><br><br><br>
-<!--nonprofit stops-->
-<!--how it works starts-->
-<section style="text-align: center;" id="works">
-    <h4 style="font-weight: bolder;">How it works</h4>
-    <span>A brief explanation of how our website works</span>
-    <div class="container">
-        <div class="container-fluid">
-                <br><div class="col-md-4 box">
-                <h3>1</h3>
-                <span>Individuals in charge of wedding records 
-                    (e.g The Catechist) registers their Church</span>
-                </div>
-                <div class="col-md-4 box">
-                    <h3>2</h3>
-                    <span>They go through our
-                        verification process,
-                        so we can ensure the integrity of the uploaded data</span>
-                </div>
-                <div class="col-md-4 box">
-                    <h3>3</h3>
-                    <span>Once verified, they gain
-                        upload access and can
-                        add, delete or edit records pertaining to their church</span>
-                </div>
-        </div>
-    </div>
-</section><br><br><br>
-<!--how it works stops-->
-<!--img bkg starts-->
-<section id="ft" class="dark-overlay">
-<div class="container">
-    <div class="container-fluid">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <br><br><br><br><br><br><br>
-            <h3>Register now, and make your documenting process easier.</h3>
-            <a href="register.html"><button class="btn navbar-btn" style="background-color: #5F7ADB; color: white;">Register</button></a>
-            <p>Or <a href="admin.html"><span style="color: #5F7ADB;">Login</span></a> if you already have an account</p>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-</div>
-</section>
-<!--img bkg stops-->
 <!--footer starts-->
 <section id="footer" style="margin-top: 0px; padding-top: 0px;">
     <div class="container">
@@ -387,16 +211,5 @@
     </div>
 </section>
 <!--footer stops-->
-<!--JS for search bar activation-->
-<script>
-    const searchBar = document.getElementById("searchBar");
-    const toggleSearchLink = document.querySelector(".toggle-search");
-  
-    toggleSearchLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      searchBar.classList.toggle("active");
-    });
-  </script>
-<!--JS for search bar activation-->
 </body>
 </html>
