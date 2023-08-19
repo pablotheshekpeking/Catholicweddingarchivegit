@@ -8,6 +8,7 @@
     <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
     <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="filter.css">
     <style>
         @font-face {
             font-family: 'NeuePlak';
@@ -74,6 +75,10 @@
             width: 100px;
         }
 
+        #filter {
+            position: absolute; right: 260px; 
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -120,6 +125,10 @@
             }
             .search-button {
                 width: 100%;
+            }
+            #filter{
+                position: relative;
+                left: 250px;
             }
             #images {
                 max-width: 100%;
@@ -197,7 +206,40 @@
             <!--header with filter starts-->
             <section class="header">
                 <h3 style="float: left;">Search results for <a href=""><span style="color: #5F7ADB;">Okonkwo Francis</span></a> <span style="font-size: 16px; color: #ccc;"> 6 wedding records</span></h3>
-                <button class="btn" style="background-color: #5F7ADB; color: white; float: right; padding: 10px;">Filter  <i class="fas fa-filter"></i></button>
+                <!--filter button-->
+            <div class="container mt-3">
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="filter" data-toggle="dropdown" style="background-color: #5F7ADB; color: white; padding: 10px;">
+                    Filter  <i class="fas fa-filter"></i></button>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="container-fluid">
+                          <span>Date Range</span>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <!-- Content for the first dropdown item -->
+                                    <input type="text" class="center-placeholder" placeholder="2008">
+                                </div>
+                                <div class="col-md-2" style="text-align: center;">
+                                    <!-- Content for the second dropdown item -->
+                                    <span>To</span>
+                                </div>
+                                <div class="col-md-5">
+                                    <!-- Content for the third dropdown item -->
+                                    <input type="text" class="center-placeholder" placeholder="2007">
+                                </div>
+                            </div><br>
+                            <span>Church</span>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input type="text" placeholder="St Patrick's Catholic Church" class="center-placeholder church">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!--filter button-->
             </section>
             <!--header with filter stops-->
             <!--search results start-->

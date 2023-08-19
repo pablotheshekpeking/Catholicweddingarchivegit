@@ -1,0 +1,20 @@
+.center-placeholder::placeholder {
+    text-align: center; /* Center-align the placeholder text */
+}
+.dropdown-menu{
+    padding: 20px;
+}
+.dropdown-menu input{
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 40px;
+}
+.church{
+    width: 400px;
+}
+
+@media (max-width: 768px){
+    .church{
+        width: 100%;
+    }
+}
