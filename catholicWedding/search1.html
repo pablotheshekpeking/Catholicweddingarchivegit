@@ -8,6 +8,7 @@
     <script src="style/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
     <script src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="filter.css">
     <style>
           @font-face {
             font-family: 'NeuePlak';
@@ -65,6 +66,11 @@
             cursor: pointer;
             width: 100px;
         } 
+
+        #filter {
+            position: absolute; right: 260px; 
+        }
+
                 /* Apply a basic reset to remove default padding and margin */
                 * {
             margin: 0;
@@ -125,6 +131,10 @@
             }
             .search-button {
                 width: 100%;
+            }
+            #filter{
+                position: relative;
+                left: 10px;
             }
             #images {
                 max-width: 100%;
@@ -200,7 +210,40 @@
         <div class="col-lg-10">
             <section class="header">
                 <h3 style="float: left;">St. Patrick’s Parish<span style="font-size: 16px; color: #ccc;"> 470 wedding records</span></h3>
-                <button class="btn" style="color: #5F7ADB; border: #5F7ADB 1px solid; float: right; padding: 10px;">Filter  <i class="fas fa-filter"></i></button>
+                <!--filter button-->
+            <div class="container mt-3">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="filter" data-toggle="dropdown" style="color: #5F7ADB; border: #5F7ADB 1px solid; float: right; padding: 10px;">
+                        Filter  <i class="fas fa-filter"></i></button>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="container-fluid">
+                          <span>Date Range</span>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <!-- Content for the first dropdown item -->
+                                    <input type="text" class="center-placeholder" placeholder="2008">
+                                </div>
+                                <div class="col-md-2" style="text-align: center;">
+                                    <!-- Content for the second dropdown item -->
+                                    <span>To</span>
+                                </div>
+                                <div class="col-md-5">
+                                    <!-- Content for the third dropdown item -->
+                                    <input type="text" class="center-placeholder" placeholder="2007">
+                                </div>
+                            </div><br>
+                            <span>Church</span>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input type="text" placeholder="St Patrick's Catholic Church" class="center-placeholder church">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!--filter button-->
             </section>
             <section class="results" style="margin-top: 10px; float: left;">
                 <div class="grid-container">
